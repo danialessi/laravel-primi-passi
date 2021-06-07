@@ -9,5 +9,6 @@
 <body>
     
     <h1>Questa è la pagina dello shop</h1>
+    <a href="{{ route('homepage') }}">Torna alla Home</a>
 </body>
 </html>

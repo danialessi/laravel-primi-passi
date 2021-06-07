@@ -16,11 +16,6 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     $data = [
         'welcome' => 'Benvenuti nella Homepage!',
-        'links' => [
-            'Shop',
-            'Contacts',
-            'Photos'
-        ]
     ];
     return view('home', $data);
 })->name('homepage');
