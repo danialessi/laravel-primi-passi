@@ -11,9 +11,9 @@
     <h1>{{$welcome}}</h1>
     <h2>Visita le altre pagine</h2>
     <ul>
-        <li><a href="{{ route('shop') }}">Shop</a></li>
-        <li><a href="{{ route('contacts') }}">Contacts</a></li>
-        <li><a href="{{ route('photos') }}">Photos</a></li>
+        @foreach ($links as $link)
+        <li><a href="{{ route($link) }}">{{$link}}</a></li>
+        @endforeach
     </ul>
 </body>
 </html>
