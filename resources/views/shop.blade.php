@@ -4,16 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Homepage</title>
+    <title>Shop</title>
 </head>
 <body>
     
-    <h1>{{$welcome}}</h1>
-    <h2>Visita le altre pagine</h2>
-    <ul>
-        @foreach ($links as $link)
-        <li><a href="{{ route('shop') }}">{{$link}}</a></li>
-        @endforeach
-    </ul>
+    <h1>Questa è la pagina dello shop</h1>
 </body>
 </html>

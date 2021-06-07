@@ -14,5 +14,25 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('home');
-});
+    $data = [
+        'welcome' => 'Benvenuti nella Homepage!',
+        'links' => [
+            'Shop',
+            'Contacts',
+            'Photos'
+        ]
+    ];
+    return view('home', $data);
+})->name('homepage');
+
+Route::get('/shop', function () {
+    return view('shop');
+})->name('shop');
+
+Route::get('/contacts', function () {
+    return view('contacts');
+})->name('contacts');
+
+Route::get('/photos', function () {
+    return view('photos');
+})->name('photos');
